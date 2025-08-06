@@ -137,84 +137,110 @@
    </head>
 <body class="overflow-x-hidden snap-y snap-mandatory overflow-y-scroll h-screen">
 
-  <!-- 🌐 Home Page Navigation Bar -->
-  <div id="home-navbar" class="w-full fixed top-0 z-50 text-white px-4 py-2 bg-black bg-opacity-90">
-    <!-- Logo & Lodge Name -->
-    <div class="text-base sm:text-lg font-extrabold tracking-wider text-center leading-tight">
-      <div class="uppercase">RAJA LODGE OOTY 🏨</div>
-      <div class="text-xs font-semibold tracking-wide text-yellow-300">Since 1980</div>
-    </div>
-
-    <!-- Navigation Links -->
-    <div class="flex flex-wrap justify-center sm:justify-end gap-4 mt-1 sm:mt-0 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">
-      <a href="#home" class="hover:text-yellow-300 transition-all">home🏠</a>
-      <a href="#about" class="hover:text-yellow-300 transition-all">About🏨</a>
-      <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery🖼️</a>
-      <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing💰</a>
-      <a href="#reviews" class="hover:text-yellow-300 transition-all">Reviews⭐</a>
-      <a href="#guidelines" class="hover:text-yellow-300 transition-all">Guidelines📌</a>
-      <a href="#contact" class="hover:text-yellow-300 transition-all">Contact📱</a>
-    </div>
+<!-- 🌐 Home Page Navigation Bar -->
+<div id="home-navbar" class="w-full fixed top-0 z-50 text-white px-4 py-2 bg-black bg-opacity-90 flex flex-col sm:flex-row items-center justify-between">
+  <!-- Logo & Lodge Name -->
+  <div class="text-base sm:text-lg font-extrabold tracking-wider text-center leading-tight">
+    <div class="uppercase">RAJA LODGE OOTY 🏨</div>
+    <div class="text-xs font-semibold tracking-wide text-yellow-300">Since 1980</div>
   </div>
 
-  <!-- 🏡 Home Section -->
-  <section id="home" class="relative w-full h-[92vh] overflow-hidden text-white pt-24">
-    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
-      <source src="InShot_20250804_160836182.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  <!-- Navigation Links -->
+  <div class="flex flex-wrap justify-center sm:justify-end gap-4 mt-1 sm:mt-0 text-xs sm:text-sm font-bold uppercase tracking-widest elegant-nav">
+    <a href="#home" class="hover:text-yellow-300 transition-all">home🏠</a>
+    <a href="#about" class="hover:text-yellow-300 transition-all">About🏨</a>
+    <a href="#gallery" class="hover:text-yellow-300 transition-all">Gallery🖼️</a>
+    <a href="#pricing" class="hover:text-yellow-300 transition-all">Pricing💰</a>
+    <a href="#reviews" class="hover:text-yellow-300 transition-all">Reviews⭐</a>
+    <a href="#guidelines" class="hover:text-yellow-300 transition-all">Guidelines📌</a>
+    <a href="#contact" class="hover:text-yellow-300 transition-all">Contact📱</a>
+  </div>
+</div>
 
-    <div class="flex flex-col items-center justify-center h-full text-center px-4">
-      <div class="bg-black p-2 rounded-full inline-block">
-  <img 
-    src="IMG-20250731-WA0005.jpg" 
-    class="w-40 h-40 object-contain rounded-full border-4 border-white" 
-  />
-      
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>
-      <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">
-        "Experience comfort in the Queen of Hills🏔️🌨️.<br>Where warmth meets heritage❤️✨."
-      </p>
-      <div class="mt-8 flex space-x-4">
-        <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition">
-          📞 Call Now
-        </a>
-        <a href="https://wa.me/9843830181" class="bg-transparent text-white font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-yellow-400 hover:text-black transition">
-          💬 WhatsApp
-        </a>
-      </div>
+<!-- 🏡 Home Section -->
+<section id="home" class="relative w-full h-[92vh] overflow-hidden text-white pt-24">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="InShot_20250804_160836182.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Hero Content -->
+  <div class="flex flex-col items-center justify-center h-full text-center px-4">
+    <!-- Logo Image -->
+    <div class="bg-black p-2 rounded-full inline-block mb-4">
+      <img 
+        src="IMG-20250731-WA0005.jpg" 
+        class="w-40 h-40 object-contain rounded-full border-4 border-white" 
+        alt="Raja Lodge Logo"
+      />
     </div>
-  </section>
 
-  <!-- 🏨 About Section -->
-   <section id="about" class="w-full h-screen bg-cover bg-center relative flex items-center justify-center px-6" style="background-image: url('image-7.png');" data-aos="flip-up">
-  <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 md:p-12 max-w-5xl w-full text-center text-white shadow-2xl border border-white/20 h-full flex flex-col justify-center">
-    
-    <h1 class="text-3xl md:text-5xl font-bold text-white mb-10 tracking-wide drop-shadow-lg">
+    <!-- Welcome Text -->
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>
+    <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">
+      "Experience comfort in the Queen of Hills🏔️🌨️.<br>Where warmth meets heritage❤️✨."
+    </p>
+
+    <!-- Call to Action Buttons -->
+    <div class="mt-8 flex space-x-4">
+      <a href="tel:9384989077" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-yellow-500 transition">
+        📞 Call Now
+      </a>
+      <a href="https://wa.me/9843830181" class="bg-transparent text-white font-semibold px-6 py-3 rounded-full border-2 border-white hover:bg-yellow-400 hover:text-black transition">
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 🏨 About Section -->
+<section 
+  id="about" 
+  class="w-full min-h-screen bg-cover bg-center relative flex items-center justify-center px-4 sm:px-6 md:px-10" 
+  style="background-image: url('image-7.png');" 
+  data-aos="flip-up"
+>
+  <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 max-w-5xl w-full text-center text-white shadow-2xl border border-white/20 flex flex-col justify-center">
+
+    <!-- Section Title -->
+    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-8 sm:mb-10 tracking-wide drop-shadow-lg">
       𝘼𝘽𝙊𝙐𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 🏨
     </h1>
 
-    <p class="text-base sm:text-lg leading-relaxed text-white merri-text">
-      Nestled in the 🌿 <strong class="text-yellow-300">heart of Ooty</strong>, <strong class="text-yellow-300">Raja Lodge</strong> has proudly stood for over <strong class="text-yellow-300">45+ years</strong> as a symbol of <strong class="text-yellow-300">trusted, affordable comfort</strong>.
+    <!-- Paragraphs -->
+    <p class="text-sm sm:text-base md:text-lg leading-relaxed merri-text">
+      Nestled in the 🌿 <strong class="text-yellow-300">heart of Ooty</strong>, 
+      <strong class="text-yellow-300">Raja Lodge</strong> has proudly stood for over 
+      <strong class="text-yellow-300">45+ years</strong> as a symbol of 
+      <strong class="text-yellow-300">trusted, affordable comfort</strong>.
     </p>
 
-    <p class="mt-6 text-base sm:text-lg text-white leading-relaxed merri-text">
-      Our guests choose us not just for the stay, but for the 💛 <strong class="text-yellow-300">homely experience</strong>, warm staff, and unbeatable 🗺️ <strong class="text-yellow-300">central location</strong> close to all major attractions.
+    <p class="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg leading-relaxed merri-text">
+      Our guests choose us not just for the stay, but for the 💛 
+      <strong class="text-yellow-300">homely experience</strong>, warm staff, and unbeatable 🗺️ 
+      <strong class="text-yellow-300">central location</strong> close to all major attractions.
     </p>
 
-    <p class="mt-6 text-base sm:text-lg text-white leading-relaxed merri-text">
-      🛏️ Every room is designed for <strong class="text-yellow-300">simplicity, cleanliness, and peace of mind</strong> — perfect for solo travelers, families, or groups.
+    <p class="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg leading-relaxed merri-text">
+      🛏️ Every room is designed for 
+      <strong class="text-yellow-300">simplicity, cleanliness, and peace of mind</strong> — 
+      perfect for solo travelers, families, or groups.
     </p>
 
-    <p class="mt-6 text-base sm:text-lg text-white leading-relaxed merri-text">
-      🚿 We blend modern amenities with our 💫 <strong class="text-yellow-300">heritage charm</strong>, ensuring your stay is both comfortable and memorable.
+    <p class="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg leading-relaxed merri-text">
+      🚿 We blend modern amenities with our 💫 
+      <strong class="text-yellow-300">heritage charm</strong>, ensuring your stay is both 
+      comfortable and memorable.
     </p>
 
-    <div class="mt-10 text-lg sm:text-xl text-yellow-300 font-semibold tracking-wide">
+    <!-- Final Line -->
+    <div class="mt-6 sm:mt-10 text-base sm:text-lg md:text-xl text-yellow-300 font-semibold tracking-wide">
       ✨ Your comfort is our tradition. Come, feel at home in the hills! ⛰️
     </div>
+
   </div>
-   </section>
+</section>
     
 <!-- 📸 Gallery -->
 
@@ -269,267 +295,274 @@
     </a>  
   </div>  
 </section> 
-   <!-- 💰 Pricing --> 
-<section class="relative border-[3px] border-[#CD7F32] my-section">  
-  
-<section   
-  id="pricing"   
-  class="w-full h-screen bg-[#013220] text-[#B8860B] p-10"  
-  data-aos="zoom-in"  
->  
-  <div class="bg-[#3C2F1F] p-6 rounded-xl shadow-lg">  
-    <h2 class="text-3xl font-bold mb-4">Pricing</h2>  
-    <p>Affordable luxury in the heart of Ooty.</p>  
-  </div>
-</section>
-
-
-  <!-- Main Heading -->  
-  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">𝙋𝙍𝙄𝘾𝙄𝙉𝙂 💰</h1>    <!-- Weekday Pricing -->    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">  
-    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekday Rates</h2>  
-    <ul class="list-disc list-inside text-black">  
-      <li>Single Person: ₹600</li>  
-      <li>Standard Room (2 persons): ₹700</li>  
-      <li>Deluxe Room (2 persons): ₹900</li>  
-      <li>Triple Bedroom (4 persons): ₹1000</li>  
-    </ul>  
-  </div>    <!-- Weekend Pricing -->    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">  
-    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekend Rates</h2>  
-    <ul class="list-disc list-inside text-black">  
-      <li>Single Person: ₹700</li>  
-      <li>Standard Room (2 persons): ₹900</li>  
-      <li>Deluxe Room (2 persons): ₹1200</li>  
-      <li>Triple Bedroom (4 persons): ₹1400</li>  
-    </ul>  
-  </div>    <!-- Seasonal Pricing -->    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">  
-    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Seasonal Pricing (Apr 1 – Jun 10)</h2>  
-    <ul class="list-disc list-inside text-black">  
-      <li>Standard Room (1 person): ₹1000</li>  
-      <li>Standard Room (2 persons): ₹1200</li>  
-      <li>Deluxe Room (2 persons): ₹1500</li>  
-      <li>Triple Bedroom (4 persons): ₹1800</li>  
-    </ul>  
-  </div>    <!-- Peak Weekend / Holiday Pricing -->    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 shadow-xl mx-4 mb-10">  
-    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Peak Weekends / Holidays</h2>  
-    <ul class="list-disc list-inside text-black mb-4">  
-      <li>Standard Room (1 person): ₹1500</li>  
-      <li>Deluxe Room (2 persons): ₹2300</li>  
-      <li>Triple Bedroom (4 persons): ₹2500</li>  
-    </ul>  
-    <!-- Tour Package -->  
-    <div class="text-lg font-semibold text-black">  
-      🚐 <strong>Tour Package:</strong> Ooty, Coonoor, Filmy Chakkar<br>  
-      Vehicle: Swaraj Mazda Van  
-    </div>  
-  </div>  
-</section> 
-      <!-- ⭐ Reviews -->
-   <section class="relative border-bronze-border my-section">
-  
+<!-- 💰 Pricing Section -->
 <section 
-  id="reviews" 
-  class=" w-full h- screen  bg-[#0064AE] text-[#153B5C] p-10"
-  data-aos="fade-right"
->
-  <div class="bg-[#006A4E] p-6 rounded-xl shadow-inner">
-    <h2 class="text-3xl font-bold mb-4">Reviews</h2>
-    <p>See what our guests are saying!</p>
-  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
-
-  <!-- Review Form -->
-  <form id="reviewForm" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 mb-8 shadow-lg mx-4">
-    <input 
-      id="name" 
-      type="text" 
-      placeholder="Your Name" 
-      class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" 
-      required
-    >  
-
-    <textarea 
-      id="comment" 
-      rows="3" 
-      placeholder="Your Review" 
-      class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" 
-      required
-    ></textarea>  
-
-    <label class="block mb-2 text-sm text-gray-300">Your Rating</label>  
-    <select 
-      id="rating" 
-      class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white"
-    >  
-      <option value="5">⭐⭐⭐⭐⭐ (5)</option>  
-      <option value="4">⭐⭐⭐⭐ (4)</option>  
-      <option value="3">⭐⭐⭐ (3)</option>  
-      <option value="2">⭐⭐ (2)</option>  
-      <option value="1">⭐ (1)</option>  
-    </select>  
-
-    <button 
-      type="submit" 
-      class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold w-full"
-    >
-      Submit Review
-    </button>  
-  </form>  
-
-  <!-- Reviews Display -->
-  <h3 class="text-2xl font-semibold mb-4 text-center">📝 Visitor Feedback</h3>  
-  <div id="reviewList" class="space-y-6 px-4 pb-10">
-    <!-- Sample Reviews -->
-    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow">
-      <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐⭐</p>
-      <p class="text-white italic mb-2">"Amazing stay! The rooms were clean and the view was breathtaking."</p>
-      <p class="text-sm text-gray-300 text-right">- Priya Sharma</p>
-    </div>
-
-    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow">
-      <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐</p>
-      <p class="text-white italic mb-2">"Peaceful place in Ooty! Great service and helpful staff."</p>
-      <p class="text-sm text-gray-300 text-right">- Arjun R</p>
-    </div>
-
-    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow">
-      <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐⭐</p>
-      <p class="text-white italic mb-2">"One of the best budget lodges in town. Highly recommended!"</p>
-      <p class="text-sm text-gray-300 text-right">- Meena Venkatesh</p>
-    </div>
-  </div>
-</section>
-
-<!-- ✅ JavaScript for Adding New Reviews -->
-<script>
-  const form = document.getElementById('reviewForm');
-  const reviewList = document.getElementById('reviewList');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const comment = document.getElementById('comment').value.trim();
-    const rating = document.getElementById('rating').value;
-
-    if (!name || !comment) return;
-
-    const stars = '⭐'.repeat(rating);
-
-    const review = document.createElement('div');
-    review.className = "bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow";
-
-    review.innerHTML = `
-      <p class="font-semibold text-lg mb-1 text-yellow-400">${stars}</p>
-      <p class="text-white italic mb-2">"${comment}"</p>
-      <p class="text-sm text-gray-300 text-right">- ${name}</p>
-    `;
-
-    reviewList.prepend(review);
-    form.reset();
-  });
-    </script>
-    <!-- 📃 Guidelines -->  
-      <section class="relative border-bronze-border my-section">
-
-      <section 
-  id="guidelines" 
-  class=" w-full h-screen  bg-[#050A30] text-[#2B364C] p-10"
-  data-aos="slide-up"
->
-  <div class="bg-[#F5EEE5] p-6 rounded-lg shadow">
-    <h2 class="text-3xl font-bold mb-4">Guidelines</h2>
-    <p>Helpful tips and rules to enhance your stay.</p>
-  <!-- Outer Container with Glow and Border -->  
-  <div class="border-2 border-green-400 shadow-[inset_0_0_15px_5px_rgba(0,255,0,0.3),_0_0_25px_5px_rgba(0,255,0,0.5)] rounded-xl p-6 mt-10 mx-4 md:mx-20 text-white">  <!-- Heading -->  
-<h1 class="text-2xl md:text-3xl font-bold text-center glow-line mb-8">𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 📌</h1>  
-
-<!-- Location & Room Info -->  
-<h2 class="text-xl font-semibold glow-line mb-2">📍 Location & Room Info</h2>  
-<ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed">  
-  <li>🚌 Just 5 minutes walk from Ooty bus stand</li>  
-  <li>📺 Rooms equipped with TV for entertainment</li>  
-  <li>💧 Hot water facility available</li>  
-  <li>🌄 Sightseeing will be arranged by us</li>  
-  <li>🤝 Friendly & comfortable hospitality for families</li>  
-</ul>  
-
-<!-- Check-in Details -->  
-<h2 class="text-xl font-semibold glow-line mb-2">🕓 Check-in Details</h2>  
-<ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed">  
-  <li>🕛 Check-in before 12 PM: 24 hours stay</li>  
-  <li>🕑 Check-in after 12 PM (2 PM): Checkout next day by 11 AM</li>  
-</ul>  
-
-<!-- Restrictions -->  
-<h2 class="text-xl font-semibold glow-line mb-2">🚫 Restrictions</h2>  
-<ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed">  
-  <li>🚫 Smoking & drinking strictly prohibited</li>  
-  <li>🚫 No fire camp facility available</li>  
-  <li>🚗 No parking facilities available</li>  
-</ul>  
-
-<!-- ID & Guest Rules -->  
-<h2 class="text-xl font-semibold glow-line mb-2">🆔 ID & Guest Rules</h2>  
-<ul class="space-y-2 text-base sm:text-lg font-medium leading-relaxed">  
-  <li>🆔 ID card mandatory – Aadhar, Voter ID, or Driving Licence</li>  
-  <li>🚫 Unmarried couples not allowed</li>  
-</ul>
-
-  </div>  
-</section>  <!-- Glowing Text Style -->  <style>  
-  .glow-line {  
-    color: #ffffff;  
-    text-shadow:  
-      0 0 5px #22c55e,  
-      0 0 10px #22c55e;  
-  }  
-</style>
-<!-- 📞 Contact -->
-         <section class="relative border-bronze-border my-section">
-
-<section 
-  id="contact" 
-  class=" w-full h-screen  bg-[#050A30] text-[#F5EEE5] p-10"
+  id="pricing" 
+  class="w-full bg-[#013220] text-[#B8860B] p-6 sm:p-10 border-[3px] border-[#CD7F32] my-section"
   data-aos="zoom-in"
 >
-  <div class="bg-[#1A1E40] p-6 rounded-lg shadow-lg">
-    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-    <p>Reach out to us directly or book your room now.</p>
-    <button class="mt-4 bg-[#785D32] text-white py-2 px-4 rounded-md hover:bg-[#a67c42] transition">
-      WhatsApp Now
-    </button>
-  <!-- Heading -->
-  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 𝙋𝙃𝙊𝙉𝙀 📱</h1>
+  <div class="bg-[#3C2F1F] p-6 rounded-xl shadow-lg text-center mb-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">𝙋𝙍𝙄𝘾𝙄𝙉𝙂 💰</h1>
+    <p class="text-base sm:text-lg">Affordable luxury in the heart of Ooty.</p>
+  </div>
 
-  <!-- Contact Details -->
-     
-<section id="contact" class="bg-black bg-opacity-40 text-white backdrop-blur-sm py-6 px-4">
-  <div class="mx-auto w-full max-w-2xl p-6 rounded-xl border border-blue-400 shadow-[0_0_30px_5px_rgba(0,126,255,0.4)]">
-    <h2 class="text-xl font-bold text-center mb-4 text-yellow-300">Contact Us</h2>
+  <!-- Weekday Pricing -->
+  <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">
+    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekday Rates</h2>
+    <ul class="list-disc list-inside text-black">
+      <li>Single Person: ₹600</li>
+      <li>Standard Room (2 persons): ₹700</li>
+      <li>Deluxe Room (2 persons): ₹900</li>
+      <li>Triple Bedroom (4 persons): ₹1000</li>
+    </ul>
+  </div>
 
-    <div class="space-y-2 text-sm sm:text-base leading-relaxed px-2">
+  <!-- Weekend Pricing -->
+  <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">
+    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekend Rates</h2>
+    <ul class="list-disc list-inside text-black">
+      <li>Single Person: ₹700</li>
+      <li>Standard Room (2 persons): ₹900</li>
+      <li>Deluxe Room (2 persons): ₹1200</li>
+      <li>Triple Bedroom (4 persons): ₹1400</li>
+    </ul>
+  </div>
+
+  <!-- Seasonal Pricing -->
+  <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">
+    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Seasonal Pricing (Apr 1 – Jun 10)</h2>
+    <ul class="list-disc list-inside text-black">
+      <li>Standard Room (1 person): ₹1000</li>
+      <li>Standard Room (2 persons): ₹1200</li>
+      <li>Deluxe Room (2 persons): ₹1500</li>
+      <li>Triple Bedroom (4 persons): ₹1800</li>
+    </ul>
+  </div>
+
+  <!-- Peak Weekend / Holiday Pricing -->
+  <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 shadow-xl mx-4 mb-4">
+    <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Peak Weekends / Holidays</h2>
+    <ul class="list-disc list-inside text-black mb-4">
+      <li>Standard Room (1 person): ₹1500</li>
+      <li>Deluxe Room (2 persons): ₹2300</li>
+      <li>Triple Bedroom (4 persons): ₹2500</li>
+    </ul>
+
+    <!-- Tour Package -->
+    <div class="text-lg font-semibold text-black">
+      🚐 <strong>Tour Package:</strong> Ooty, Coonoor, Filmy Chakkar<br>
+      Vehicle: Swaraj Mazda Van
+    </div>
+  </div>
+   </section>
+   <!-- ⭐ Reviews -->
+<section class="relative border-[3px] border-[#CD7F32] my-section">
+  <section 
+    id="reviews" 
+    class="w-full min-h-screen bg-[#0064AE] text-[#153B5C] px-4 sm:px-6 md:px-10 py-10"
+    data-aos="fade-right"
+  >
+    <div class="bg-[#006A4E] p-6 rounded-xl shadow-inner">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white text-center drop-shadow">
+        REVIEWS ⭐
+      </h2>
+      <p class="text-white text-center mb-6">
+        See what our guests are saying!
+      </p>
+
+      <!-- Review Form -->
+      <form id="reviewForm" class="bg-gray-900 bg-opacity-70 rounded-xl p-6 mb-8 shadow-lg max-w-3xl mx-auto">
+        <input 
+          id="name" 
+          type="text" 
+          placeholder="Your Name" 
+          class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" 
+          required
+        >  
+
+        <textarea 
+          id="comment" 
+          rows="3" 
+          placeholder="Your Review" 
+          class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" 
+          required
+        ></textarea>  
+
+        <label class="block mb-2 text-sm text-gray-300">Your Rating</label>  
+        <select 
+          id="rating" 
+          class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white"
+        >  
+          <option value="5">⭐⭐⭐⭐⭐ (5)</option>  
+          <option value="4">⭐⭐⭐⭐ (4)</option>  
+          <option value="3">⭐⭐⭐ (3)</option>  
+          <option value="2">⭐⭐ (2)</option>  
+          <option value="1">⭐ (1)</option>  
+        </select>  
+
+        <button 
+          type="submit" 
+          class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-2 rounded-full font-semibold w-full"
+        >
+          Submit Review
+        </button>  
+      </form>  
+
+      <!-- Reviews Display -->
+      <h3 class="text-2xl font-semibold mb-4 text-center text-white">📝 Visitor Feedback</h3>  
+      <div id="reviewList" class="space-y-6 px-2 sm:px-4 md:px-10 pb-10">
+
+        <!-- Sample Review 1 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow text-white">
+          <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐⭐</p>
+          <p class="italic mb-2">"Amazing stay! The rooms were clean and the view was breathtaking."</p>
+          <p class="text-sm text-gray-300 text-right">- Priya Sharma</p>
+        </div>
+
+        <!-- Sample Review 2 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow text-white">
+          <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐</p>
+          <p class="italic mb-2">"Peaceful place in Ooty! Great service and helpful staff."</p>
+          <p class="text-sm text-gray-300 text-right">- Arjun R</p>
+        </div>
+
+        <!-- Sample Review 3 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow text-white">
+          <p class="font-semibold text-lg mb-1 text-yellow-400">⭐⭐⭐⭐⭐</p>
+          <p class="italic mb-2">"One of the best budget lodges in town. Highly recommended!"</p>
+          <p class="text-sm text-gray-300 text-right">- Meena Venkatesh</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ JavaScript for Adding New Reviews -->
+  <script>
+    const form = document.getElementById('reviewForm');
+    const reviewList = document.getElementById('reviewList');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const comment = document.getElementById('comment').value.trim();
+      const rating = document.getElementById('rating').value;
+
+      if (!name || !comment) return;
+
+      const stars = '⭐'.repeat(rating);
+
+      const review = document.createElement('div');
+      review.className = "bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 shadow text-white";
+
+      review.innerHTML = `
+        <p class="font-semibold text-lg mb-1 text-yellow-400">${stars}</p>
+        <p class="italic mb-2">"${comment}"</p>
+        <p class="text-sm text-gray-300 text-right">- ${name}</p>
+      `;
+
+      reviewList.prepend(review);
+      form.reset();
+    });
+  </script>
+             </section>
+   <!-- 📃 Guidelines -->
+<section id="guidelines" class="w-full h-screen bg-[#0B0F26] text-[#FFD700] p-10" data-aos="slide-up">
+  <div class="border-2 border-yellow-400 shadow-[inset_0_0_15px_5px_rgba(255,215,0,0.3),_0_0_25px_5px_rgba(255,215,0,0.5)] rounded-xl p-6 mt-10 mx-4 md:mx-20 text-white bg-[#111827]">
+    
+    <!-- Heading -->
+    <h1 class="text-2xl md:text-3xl font-bold text-center glow-gold mb-8">𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 📌</h1>
+
+    <!-- Location & Room Info -->
+    <h2 class="text-xl font-semibold glow-gold mb-2">📍 Location & Room Info</h2>
+    <ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed">
+      <li>🚌 5 minutes walk from Ooty bus stand</li>
+      <li>📺 TV in all rooms for entertainment</li>
+      <li>💧 24x7 hot water facility</li>
+      <li>🌄 Sightseeing arranged by us</li>
+      <li>🤝 Friendly family-friendly hospitality</li>
+    </ul>
+
+    <!-- Check-in Details -->
+    <h2 class="text-xl font-semibold glow-gold mb-2">🕓 Check-in Details</h2>
+    <ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed">
+      <li>🕛 Before 12 PM: 24-hour stay</li>
+      <li>🕑 After 12 PM (2 PM): Checkout next day by 11 AM</li>
+    </ul>
+
+    <!-- Restrictions -->
+    <h2 class="text-xl font-semibold glow-gold mb-2">🚫 Restrictions</h2>
+    <ul class="mb-6 space-y-2 text-base sm:text-lg font-medium leading-relaxed text-red-400">
+      <li>🚭 Smoking & drinking strictly prohibited</li>
+      <li>🔥 No fire camp facility</li>
+      <li>🚗 No parking available</li>
+    </ul>
+
+    <!-- ID & Guest Rules -->
+    <h2 class="text-xl font-semibold glow-gold mb-2">🆔 ID & Guest Rules</h2>
+    <ul class="space-y-2 text-base sm:text-lg font-medium leading-relaxed">
+      <li>🆔 Government ID (Aadhar, Voter ID, Driving Licence) required</li>
+      <li>🚫 Unmarried couples not allowed</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ✨ Glowing Text Style -->
+<style>
+  .glow-gold {
+    color: #FFD700;
+    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700;
+  }
+</style>
+   <!-- 📞 Contact -->
+<section 
+  id="contact" 
+  class="w-full min-h-[60vh] bg-[#050A30] text-[#F5EEE5] flex items-center justify-center px-4 py-10"
+  data-aos="zoom-in"
+>
+  <div class="w-full max-w-2xl bg-[#1A1E40] p-8 rounded-xl shadow-[0_0_40px_10px_rgba(0,126,255,0.2)] border border-[#785D32]">
+
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-yellow-300 mb-6">
+      📞 𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀
+    </h1>
+
+    <!-- Contact Details -->
+    <div class="space-y-4 text-sm sm:text-base leading-relaxed">
       <p><strong>📞 Phone:</strong>  
         <a href="tel:+919843830181" class="text-yellow-400 hover:underline">98438 30181</a>,  
-        <a href="tel:+919843676822" class="text-yellow-400 hover:underline">98436 76822</a>  
+        <a href="tel:+919843676822" class="text-yellow-400 hover:underline">98436 76822</a>
       </p>
 
       <p><strong>📧 Email:</strong>  
-        <a href="mailto:rajalodge1980@gmail.com" class="text-yellow-400 hover:underline">rajalodge1980@gmail.com</a>  
+        <a href="mailto:rajalodge1980@gmail.com" class="text-yellow-400 hover:underline">rajalodge1980@gmail.com</a>
       </p>
 
       <p><strong>📍 Address:</strong>  
-        5, Mannuvel Pillai Street, Near Bus Stand, Ooty - 643001  
+        5, Mannuvel Pillai Street, Near Bus Stand, Ooty - 643001
       </p>
 
       <p><strong>💬 WhatsApp:</strong>  
-        <a href="https://wa.me/919843830181" target="_blank" class="text-yellow-400 hover:underline">Message on WhatsApp</a>  
+        <a href="https://wa.me/919843830181" target="_blank" class="text-yellow-400 hover:underline">Message on WhatsApp</a>
       </p>
 
       <p><strong>🗺️ Location:</strong>  
-        <a href="https://maps.app.goo.gl/a5QaWoUhVjzJ6Zy5A" target="_blank" class="text-yellow-400 hover:underline">View on Google Maps</a>  
+        <a href="https://maps.app.goo.gl/a5QaWoUhVjzJ6Zy5A" target="_blank" class="text-yellow-400 hover:underline">View on Google Maps</a>
       </p>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="mt-6 text-center">
+      <a href="https://wa.me/919843830181" target="_blank" class="inline-block bg-[#785D32] text-white py-2 px-6 rounded-md hover:bg-[#a67c42] transition">
+        WhatsApp Now
+      </a>
     </div>
   </div>
 </section>
+
+
+
 
 <!-- Go to Top Button -->
 <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
