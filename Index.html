@@ -106,6 +106,70 @@
         0 0 40px #8a2be2;
     }
   </style>
+  <style>
+  .gallery-bg {
+    background: linear-gradient(-45deg, #FAF3E0, #FDEBD0, #FAF3E0, #FFEBCD);
+    background-size: 400% 400%;
+    animation: gradientGallery 10s ease infinite;
+  }
+
+  .pricing-bg {
+    background: linear-gradient(-45deg, #F5F0EB, #EDE6DE, #F5F0EB, #FFF5E1);
+    background-size: 400% 400%;
+    animation: gradientPricing 10s ease infinite;
+  }
+
+  .reviews-bg {
+    background: linear-gradient(-45deg, #FDF6F0, #FAEEE0, #FDF6F0, #FFEFD5);
+    background-size: 400% 400%;
+    animation: gradientReviews 10s ease infinite;
+  }
+
+  .contact-bg {
+    background: linear-gradient(-45deg, #F3F7F8, #E8F1F2, #F3F7F8, #DDEBF0);
+    background-size: 400% 400%;
+    animation: gradientContact 10s ease infinite;
+  }
+
+  .guidelines-bg {
+    background: linear-gradient(-45deg, #F5F5F5, #EAEAEA, #F5F5F5, #E0E0E0);
+    background-size: 400% 400%;
+    animation: gradientGuidelines 10s ease infinite;
+  }
+
+  @keyframes gradientGallery,
+  gradientPricing,
+  gradientReviews,
+  gradientContact,
+  gradientGuidelines {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  </style>
+  <!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- Custom Smooth Animation (Optional) -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- AOS Initialization -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1000,
+      once: true, // Animate only once
+      easing: 'ease-in-out',
+    });
+  });
+</script>
     </head>
   <body class="overflow-x-hidden">
 <body class="overflow-x-hidden">
@@ -156,23 +220,16 @@
     </p>  
   </div>  
 </section>  
+        
+<body class="snap-y snap-mandatory overflow-y-scroll h-screen">
 
-
-<!-- ✅ ABOUT SECTION -->
-
-<section class="relative w-full px-4 py-16 overflow-hidden flex items-center justify-center bg-black">
-
-  <!-- Background Image -->
-  <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('image-1.png');"></div>
-
-  <!-- Violet Neon Glow Overlay (optional decorative layer) -->
-  <!-- Strong Blue Neon Glow Overlay (decorative layer) -->
-<div class="absolute inset-0 z-10 pointer-events-none shadow-[0_0_100px_40px_rgba(0,191,255,0.6)]"></div>
-
-  <!-- Glass Effect Container with Violet Glow -->
-  <div class="relative z-20 w-full max-w-5xl px-10 py-12 rounded-2xl bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 shadow-[0_0_25px_8px_rgba(138,43,226,0.4)]">
-
-    <!-- Heading -->
+<!-- About Section -->
+<section
+  id="about"
+  class="snap-y snap-mandatory overflow-y-scrollh-screen bg-cover bg-center relative flex items-center justify-center"
+  style="background-image: url('your-image.jpg');" 
+  data-aos="fade-up"
+      <!-- Heading -->
     <h1 class="text-3xl md:text-5xl font-bold text-center mb-10 text-white tracking-wide drop-shadow-lg">
       𝘼𝘽𝙊𝙐𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 🏨
     </h1>
@@ -200,18 +257,16 @@
     </div>
   </div>
 </section>
+>
+  <!-- Glass effect box -->
+  <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 max-w-2xl text-center text-white shadow-lg border border-white/20">
+    <h2 class="text-4xl font-bold mb-4">About Us</h2>
+    <p class="text-lg">
 
-      <!-- ✅ GALLERY SECTION -->
-<section id="gallery" class="py-12 px-4 bg-black text-white">
-  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙂𝘼𝙇𝙇𝙀𝙍𝙔 🖼️</h1>
-
-  <!-- ✅ Fade-in Pop-up Section -->
-  <div
-    class="mt-10 bg-black bg-opacity-60 backdrop-blur-md p-6 rounded-xl shadow-[0_0_25px_8px_rgba(0,191,255,0.6)] ring-2 ring-cyan-400 ring-opacity-40"
-    data-aos="fade-up"
-    data-aos-duration="1500"
-  >
-    <!-- Gallery Grid -->
+    <!-- 📸 Gallery -->
+<section class=""snap-y snap-mandatory overflow-y-scroll gallery-bg min-h-screen text-[#3B3A3A]" data-aos="flip-up">
+    <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙂𝘼𝙇𝙇𝙀𝙍𝙔 🖼️</h1>
+      <!-- Gallery Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <!-- Gallery Images (10 items) -->
       <div onclick="openModal('https://i.ibb.co/gqZLVwS/IMG-20250731-WA0005-1.jpg')" class="cursor-pointer transition hover:scale-105">
@@ -256,25 +311,13 @@
     </div>
   </div>
 </section>
+</section>
 
-
-
-
-
-  <!-- Pricing Section -->
-<section id="pricing" data-aos="fade-up-left" data-aos-duration="1000" class="min-h-screen bg-cover bg-center flex items-center justify-center px-4 py-10" style="background-image: url('image-4.png');">
- <div class="shadow-[inset_0_0_60px_rgba(0,191,255,0.4)] rounded-xl">
-  <body class="min-h-screen flex flex-col items-center justify-center text-white" style="animation: rgbGlow 5s linear infinite;">
- <div class="neon-glow-box p-5 shadow shadow-[0_0_15px_2px_rgba(138,43,226,0.4)]">
-
- </div>
-
-    <!-- Main Heading -->
+<!-- 💰 Pricing -->
+<section class="snap-y snap-mandatory overflow-y-scrollpricing-bg min-h-screen text-[#4A3F35]" data-aos="zoom-in">
+      <!-- Main Heading -->
     <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙋𝙍𝙄𝘾𝙄𝙉𝙂💰</h1>
-<!-- Strong Blue Neon Glow Overlay (decorative layer) -->
-<div class="absolute inset-0 z-10 pointer-events-none shadow-[0_0_100px_40px_rgba(0,191,255,0.6)]"></div>
-
-    <!-- Weekday Pricing -->
+      <!-- Weekday Pricing -->
     <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl">
       <div class="neon-glow-box p-6,5shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)"></div>
       <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekday Rates</h2>
@@ -326,12 +369,11 @@
 
   </div>
 </section>
-    <!-- ✅ REVIEWS SECTION --> 
+</section>
 
-     <section id="reviews" data-aos="fade-right" data-aos-duration="1000">
-       <div class="neon-glow-box p-5,5shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)"><div/>
-
-  <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
+<!-- ⭐ Reviews -->
+<section class="snap-y snap-mandatory overflow-y-scrollreviews-bg min-h-screen text-[#2E2E2E]" data-aos="fade-right">
+    <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
 <form id="reviewForm" 
   class="bg-gray-900 bg-opacity-70 rounded-xl p-6 mb-8 shadow-lg">  
   <input id="name" type="text" placeholder="Your Name" class="w-full mb-4 px-4 py-2 rounded bg-gray-800 text-white focus:outline-none" required>  
@@ -404,11 +446,10 @@
     form.reset();  
   });  
 </script>
-<!-- Guidelines Section -->
-      <section id="guidelines" data-aos="zoom-in" data-aos-duration="1000">
-<section id="guidelines" class="bg-black py-12 px-4 sm:px-8">
-  <div class="max-w-3xl mx-auto p-10 rounded-xl bg-black bg-opacity-60 backdrop-blur-md text-white
-            border-2 border-green-400
+</section>
+  <!-- 📃 Guidelines -->
+<section class="snap-y snap-mandatory overflow-y-scroll guidelines-bg min-h-screen text-[#2B2B2B]" data-aos="slide-up">
+              border-2 border-green-400
             shadow-[inset_0_0_15px_5px_rgba(0,255,0,0.3),_0_0_25px_5px_rgba(0,255,0,0.5)]">
 
     <!-- Heading -->
@@ -453,12 +494,11 @@
       0 0 10px #22c55e;
   }
 </style>
+</section>
 
-   <!-- Contact Placeholder -->  
-        <section id="contact" data-aos="fade-up" data-aos-duration="1200">
-        <section id="contact" class="w-full py-10 px-4 sm:px-6 text-white" style="background: linear-gradient(135deg, #000000, #0a2540); font-family: 'Segoe UI', sans-serif;">  
-  <div class="max-w-md mx-auto"> 
-<div class="neon-glow-box p-,5shadow shadow-[0_0_15px_2px_rgba(0,191,255,0.4)">
+<!-- 📞 Contact -->
+<section class= "snap-y snap-mandatory overflow-y-scroll contact-bg min-h-screen text-[#36454F]" data-aos="zoom-in">
+  
     <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 𝙋𝙃𝙊𝙉𝙀 📱</h1>
     </h2>  <div class="space-y-4 text-base sm:text-lg leading-relaxed">  
   <p><strong>📞 Phone:</strong>  
@@ -509,4 +549,26 @@
          <!-- Go to Top Button -->
 <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
         class="fixed centre bg-yellow-400 text-black font-bold p-3 rounded-full z-50"
-        style="box-shadow: inset 0 0 18px rgba(255,215,0,0.5), 0 0 28px rgba(255,215,0,0.
+        style="box-shadow: inset 0 0 18px rgba(255,215,0,0.5), 0 0 28px rgba(255,215,0,0.4);">
+  ⬆️
+</button> 
+
+        <footer class="relative bg-black bg-opacity-70 text-white text-center py-6 mt-20 border-t border-gray-700 overflow-hidden">
+  <!-- Inner Gold Glow -->
+  <div class="absolute inset-0 rounded-t-xl z-0 pointer-events-none" style="box-shadow: inset 0 0 40px rgba(255,215,0,0.2), inset 0 0 80px rgba(255,215,0,0.1);"></div>
+
+  <!-- Footer Content -->
+  <p class="relative z-10 text-sm sm:text-base font-light tracking-wider text-yellow-300">
+    © 2025 Raja Lodge, Ooty. All rights reserved.
+  </p>
+        </footer>  
+        </section>
+      </section>
+</div>
+</div>
+
+
+
+</body>  
+  </html>
+
