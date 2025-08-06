@@ -165,7 +165,7 @@
     </video>
 
     <div class="flex flex-col items-center justify-center h-full text-center px-4">
-      <img src="IMG-20250731-WA0005.jpg" alt="Raja Lodge Logo" class="w-28 h-28 rounded-full border-4 border-white mb-4 mt-6" />
+      <img src="IMG-20250731-WA0005.jpg"  class="w-28 h-28 rounded-full border-4 border-white mb-4 mt-6" />
       <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-400">Welcome to RAJA LODGE</h1>
       <p class="mt-2 text-lg sm:text-xl italic text-white leading-snug">
         "Experience comfort in the Queen of Hills🏔️🌨️.<br>Where warmth meets heritage❤️✨."
@@ -182,7 +182,9 @@
   </section>
 
   <!-- 🏨 About Section -->
-  <section id="about" class="snap-start min-h-screen bg-cover bg-center relative flex items-center justify-center px-6" style="background-image: url('image-7.png');" data-aos="fade-up">
+   <section class="relative border-bronze-border my-section">
+
+  <section id="about" class="snap-start min-h-screen bg-cover bg-center relative flex items-center justify-center px-6" style="background-image: url('image-7.png');" data-aos="flip-up">
     <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 max-w-2xl text-center text-white shadow-lg border border-white/20">
       <h1 class="text-3xl md:text-5xl font-bold text-center mb-10 text-white tracking-wide drop-shadow-lg">
         𝘼𝘽𝙊𝙐𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 🏨
@@ -207,11 +209,17 @@
     
 <!-- 📸 Gallery -->
 
-<section   
-  id="gallery"  
-  class="snap-start h-screen overflow-y-auto gallery-bg bg-cover bg-center flex flex-col items-center justify-start pt-20 px-4 text-[#3B3A3A]"   
-  data-aos="flip-up"  
->  
+<section class="relative border-bronze-border my-section">
+
+
+<section 
+  id="gallery" 
+  class="snap-start min-h-screen overflow-y-scroll snap-mandatory bg-[#050A30] text-[#B39B6F] p-10"
+  data-aos="flip-up"
+>
+  <div class="bg-[#1A1E40] p-6 rounded-lg shadow-lg">
+    
+    <p>Explore Raja Lodge through our curated images.</p>
   <h1 class="text-2xl md:text-3xl font-bold text-center mb-10">𝙂𝘼𝙇𝙇𝙀𝙍𝙔 🖼️</h1>    <!-- Gallery Grid -->    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">  
     <!-- Gallery Images (10 items) -->  
     <div onclick="openModal('https://i.ibb.co/gqZLVwS/IMG-20250731-WA0005-1.jpg')" class="cursor-pointer transition hover:scale-105">  
@@ -251,11 +259,21 @@
       💬 Book Now   
     </a>  
   </div>  
-</section>  <!-- 💰 Pricing -->  <section   
-  id="pricing"  
-  class="snap-start min-h-screen overflow-y-scroll snap-mandatory pricing-bg text-[#4A3F35]"   
-  data-aos="zoom-in"  
->  
+</section> 
+   <!-- 💰 Pricing --> 
+<section class="relative border-bronze-border my-section">
+
+   
+<section 
+  id="pricing" 
+  class="snap-start min-h-screen overflow-y-scroll snap-mandatory bg-[#050A30] text-[#785D32] p-10"
+  data-aos="zoom-in"
+>
+  <div class="bg-[#B39B6F] p-6 rounded-xl shadow-lg">
+    <h2 class="text-3xl font-bold mb-4">Pricing</h2>
+    <p>Affordable luxury in the heart of Ooty.</p>
+
+
   <!-- Main Heading -->  
   <h1 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">𝙋𝙍𝙄𝘾𝙄𝙉𝙂 💰</h1>    <!-- Weekday Pricing -->    <div class="bg-gray-300 bg-opacity-60 backdrop-blur-md rounded-2xl p-6 mb-6 shadow-xl mx-4">  
     <h2 class="text-2xl font-bold text-blue-700 uppercase mb-2">Weekday Rates</h2>  
@@ -296,11 +314,16 @@
   </div>  
 </section> 
       <!-- ⭐ Reviews -->
+   <section class="relative border-bronze-border my-section">
+  
 <section 
-  id="reviews"
-  class="snap-start min-h-screen overflow-y-scroll snap-mandatory reviews-bg text-[#2E2E2E]" 
+  id="reviews" 
+  class="snap-start min-h-screen overflow-y-scroll snap-mandatory bg-[#050A30] text-[#153B5C] p-10"
   data-aos="fade-right"
 >
+  <div class="bg-[#5E2A1D] p-6 rounded-xl shadow-inner">
+    <h2 class="text-3xl font-bold mb-4">Reviews</h2>
+    <p>See what our guests are saying!</p>
   <h1 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-6">𝙍𝙀𝙑𝙄𝙀𝙒 ⭐</h1>
 
   <!-- Review Form -->
@@ -394,11 +417,17 @@
     form.reset();
   });
     </script>
-    <!-- 📃 Guidelines -->  <section   
-  id="guidelines"  
-  class="snap-start min-h-screen overflow-y-scroll snap-mandatory guidelines-bg text-[#2B2B2B]"   
-  data-aos="slide-up"  
->  
+    <!-- 📃 Guidelines -->  
+      <section class="relative border-bronze-border my-section">
+
+      <section 
+  id="guidelines" 
+  class="snap-start min-h-screen overflow-y-scroll snap-mandatory bg-[#050A30] text-[#2B364C] p-10"
+  data-aos="slide-up"
+>
+  <div class="bg-[#F5EEE5] p-6 rounded-lg shadow">
+    <h2 class="text-3xl font-bold mb-4">Guidelines</h2>
+    <p>Helpful tips and rules to enhance your stay.</p>
   <!-- Outer Container with Glow and Border -->  
   <div class="border-2 border-green-400 shadow-[inset_0_0_15px_5px_rgba(0,255,0,0.3),_0_0_25px_5px_rgba(0,255,0,0.5)] rounded-xl p-6 mt-10 mx-4 md:mx-20 text-white">  <!-- Heading -->  
 <h1 class="text-2xl md:text-3xl font-bold text-center glow-line mb-8">𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 📌</h1>  
@@ -445,15 +474,27 @@
   }  
 </style>
 <!-- 📞 Contact -->
+         <section class="relative border-bronze-border my-section">
+
 <section 
   id="contact" 
-  class="snap-start min-h-screen overflow-y-scroll snap-mandatory contact-bg text-[#36454F]" 
+  class="snap-start min-h-screen overflow-y-scroll snap-mandatory bg-[#050A30] text-[#F5EEE5] p-10"
   data-aos="zoom-in"
 >
+  <div class="bg-[#1A1E40] p-6 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <p>Reach out to us directly or book your room now.</p>
+    <button class="mt-4 bg-[#785D32] text-white py-2 px-4 rounded-md hover:bg-[#a67c42] transition">
+      WhatsApp Now
+    </button>
   <!-- Heading -->
   <h1 class="text-2xl md:text-3xl font-bold text-center mt-10">𝘾𝙊𝙉𝙏𝘼𝘾𝙏 𝙍𝘼𝙅𝘼 𝙇𝙊𝘿𝙂𝙀 𝙋𝙃𝙊𝙉𝙀 📱</h1>
 
   <!-- Contact Details -->
+     <div class="mx-auto max-w-xl p-6 rounded-3xl border border-blue-400 shadow-[0_0_30px_8px_rgba(0,126,255,0.5)] bg-black bg-opacity-40 text-white backdrop-blur-sm">
+  <h2 class="text-2xl font-bold text-center mb-4">Blue Glow Box</h2>
+  <p class="text-center">This is a beautiful glowing container with curved edges, perfect for premium sections like Contact, Booking, or Highlights.</p>
+     
   <div class="space-y-4 text-base sm:text-lg leading-relaxed mt-6 px-4 md:px-20">
     <p><strong>📞 Phone:</strong>  
       <a href="tel:+919843830181" class="text-yellow-400 hover:underline">98438 30181</a>,  
